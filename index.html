@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site 1C</title>
+    <title>Felipe "melhor" aluno</title>
     <style>
         header {
             background-color: darkred;
@@ -11,7 +11,7 @@
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
-            border: 5px solid #7510af;
+            border: 1px solid #000000;
             padding: 16px;
         }
         main {
@@ -22,35 +22,39 @@
    
         }
         img {
-            width: 80px;
-            height: 80px;
+            width: 180px;
+            height: 180px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Meu site</h1>
-        <p>Esse site foi feito na disciplina de educação digital</p>
+        <h1>Meu "querido"</h1>
+        <p>Esse site para o meu aluno especial, que ama minhas aulas</p>
+        <p>Ele é perfeito e não tem defeitos</p>
     </header>
     <main>
-        <img src="computador.png" alt="icone de computador">
+        <img src="post1.png" alt="icone de computador">
        
         <div>
             <h2>Meu primeiro post</h2>
             <p>editado por Mateus</p>
             <p>Boas-vindas ao meu blog! Aqui vou compartilhar sobre tecnologia e computação</p>
             <button>❤️ <span>0</span></button>
+            <button>🤓​ <span>0</span></button>
         </div>
-           
+
     </main>
 </body>
 
 <script>
-    const botao = document.querySelector("button");
+    const botoes = document.querySelector("button");
     botao.addEventListener("click",botaoClicado);
 
-    function botao clicado () {
+    function botaoClicado () {
         console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
     }
 </script>
 
